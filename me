@@ -1,0 +1,54 @@
+1) 
+#! /bin/sh 
+# This is bash program to display Hello World 
+echo " Hello World " 
+Output: 
+
+
+
+
+2) 
+echo "Enter three Integers:" 
+read a b c 
+if [ $a -gt $b -a $a -gt $c ] 
+then 
+echo "$a is Greatest" 
+elif [ $b -gt $c -a $b -gt $a ] 
+then 
+echo "$b is Greatest" 
+else 
+echo "$c is Greatest!" 
+fi 
+Output 
+
+
+
+
+3) 
+# using for loop 
+for i in 1 2 3 4 5 6 7 8 9 10 
+do 
+echo -n "$i "  
+done 
+echo "" 
+Output 
+
+
+for ((i=1; i<=10; i++)) 
+do 
+echo "$i"  
+done 
+Output 
+
+
+
+4) 
+n=3 
+echo "output" 
+i=1 
+while [ $i -le 15 ] 
+do 
+echo "$(( n * i ))" 
+i=$(( i+1 )) 
+done 
+Output:
