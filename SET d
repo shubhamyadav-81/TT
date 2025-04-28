@@ -1,0 +1,20 @@
+create database student1;
+
+create table marks1( student_id int, student_name varchar (20), marks int);
+insert into marks1 values(1, 'sahil', 6.5);
+insert into marks1 values(2, 'baba', 7.5);
+insert into marks1 values(3, 'abhi', 8.5);
+insert into marks1 values(4, 'shub', 9.5);
+
+SELECT * from marks1;
+
+select lower(student_name) as LCASE from marks1;
+select upper(student_name) as UCASE from marks1;
+select length(student_name) as LEN from marks1;
+select mid(student_name,2,3) as MID from marks1;
+select round(marks) as ROUND from marks1;
+select sum(marks) as sum from marks1;
+select count(student_name) as count from marks1;
+select min(marks) as min from marks1;
+select max(marks) as max from marks1;
+select avg(marks) as average from marks1;
